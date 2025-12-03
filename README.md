@@ -1,6 +1,6 @@
 # Homebrew bump cask GitHub Action
 
-_This action was adapted from https://github.com/dawidd6/action-homebrew-bump-formula to work for casks rather than formula_
+> Forked from https://github.com/macauley/action-homebrew-bump-cask. Since the original project seems unmaintained, this fork continues active development.
 
 An action that wraps `brew bump-cask-pr` to ease the process of updating the cask on new project releases.
 
@@ -28,7 +28,7 @@ The Action will extract all needed informations by itself, you just need to spec
 
 ```yaml
 - name: Update Homebrew cask
-  uses: macauley/action-homebrew-bump-cask@v1
+  uses: friesi23/action-homebrew-bump-cask@v2
   with:
     # Required, custom GitHub access token with the 'public_repo' and 'workflow' scopes
     token: ${{secrets.TOKEN}}
@@ -56,7 +56,7 @@ If there are no outdated casks, the Action will just exit.
 
 ```yaml
 - name: Update Homebrew cask
-  uses: macauley/action-homebrew-bump-cask@v1
+  uses: friesi23/action-homebrew-bump-cask@v2
   with:
     # Required, custom GitHub access token with only the 'public_repo' scope enabled
     token: ${{secrets.TOKEN}}

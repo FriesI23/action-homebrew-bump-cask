@@ -1,8 +1,8 @@
-name: Homebrew bump cask
+name: Homebrew bump cask plus
 description: Bump (update) a Homebrew cask on new project release
-author: macauley
+author: FriesI23
 branding:
-  icon: arrow-up-circle
+  icon: box
   color: yellow
 inputs:
   token:
